@@ -10,9 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var profileLogo: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        profileLogo.layer.cornerRadius = 9
+        profileLogo.layer.masksToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
